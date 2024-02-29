@@ -8,4 +8,19 @@ For(Account acc:newAccList){
 }   
 }
 
+public static void createRelatedCons(List<Account>newAccList){
+    List<Contact>conListToInsert=New List<Contact>();
+
+    For(Account acc:newAccList){
+        Contact con=New Contact();
+        con.LastName='Test From Trigger'+acc.Name;
+        con.AccountId=acc.Id;
+        conListToInsert.add(con);
+    }
+
+    if(!conListToInsert.isEmpty()){
+        insert conListToInsert;
+    }
+}
+
 }
