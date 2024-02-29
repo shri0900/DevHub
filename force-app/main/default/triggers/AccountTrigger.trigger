@@ -1,4 +1,4 @@
-trigger AccountTrigger on Account (before insert) {
+trigger AccountTrigger on Account (before insert,after insert) {
 
 if(Trigger.IsInsert){
 if(Trigger.isBefore){
