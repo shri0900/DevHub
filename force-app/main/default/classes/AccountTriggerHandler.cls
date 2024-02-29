@@ -23,4 +23,20 @@ public static void createRelatedCons(List<Account>newAccList){
     }
 }
 
+    public static void relatedOpps(List<Account>newAccList){
+        List<Opportunity>oppToInsert=New List<Opportunity>();
+
+        For(Account acc:newAccList){
+            Opportunity opp=New Opportunity();
+            opp.Name='Test opp';
+            opp.StageName='Prospecting';
+            opp.CloseDate=system.today()+10;
+            opp.AccountId=acc.Id;
+            oppToInsert.add(opp);
+        }
+
+        if(oppToInsert.isEmpty()){
+          insert  oppToInsert;
+        }
+    }
 }
