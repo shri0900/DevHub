@@ -8,16 +8,13 @@ else if(Trigger.isAfter){
 AccountTriggerHandler.createRelatedCons(Trigger.new);
 AccountTriggerHandler.relatedOpps(Trigger.New);
 }
-
+}
 if(Trigger.IsUpdate){
 if(Trigger.IsBefore){
-
+AccountTriggerHandler.updateDesc(Trigger.new,Trigger.oldMap);
 }
 else if(Trigger.isAfter){
-    AccountTriggerHandler.updateconPhone(Trigger.new, Trigger.oldMap);
-
+AccountTriggerHandler.updateconPhone(Trigger.new, Trigger.oldMap);
 }
 }
-}
-
 }
