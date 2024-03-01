@@ -54,7 +54,7 @@ public static void createRelatedCons(List<Account>newAccList){
             accMap.put(acc.Id, acc);
         }
         List<Contact>conList=New List<Contact>();
-        For(Contact con:[SELECT Id,Phone FROM Contact WHERE AccountID IN:accIds]){
+        For(Contact con:[SELECT Id,Phone,AccountID FROM Contact WHERE AccountID IN:accIds]){
             if(accMap.containsKey(con.accountId)){
                con.Phone=accMap.get(con.AccountId).Phone;
                 conList.add(con);
@@ -62,6 +62,7 @@ public static void createRelatedCons(List<Account>newAccList){
         }
 
         if(!conList.isEmpty()){
+            system.debug(conList);
             insert conList;
         }
     }

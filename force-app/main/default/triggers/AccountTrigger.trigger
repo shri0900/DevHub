@@ -14,7 +14,8 @@ if(Trigger.IsBefore){
 
 }
 else if(Trigger.isAfter){
-    AccountTriggerHandler.updateconPhone(Trigger.New,Trigger.oldMap);
+    AccountTriggerHandler.updateconPhone(Trigger.new, Trigger.oldMap);
+
 }
 }
 }
