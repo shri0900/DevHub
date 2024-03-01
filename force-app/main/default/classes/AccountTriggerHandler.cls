@@ -39,4 +39,31 @@ public static void createRelatedCons(List<Account>newAccList){
           insert  oppToInsert;
         }
     }
+
+    public static void updateconPhone(List<Account>accList,Map<Id,Account>oldAccMap){
+       Set<Id>accIds=New Set<Id>();
+        For(Account acc:accList){
+            if(acc.Phone!=null&&acc.phone!=oldAccMap.get(acc.Id).Phone){
+                accIds.add(acc.Id);
+            }
+        }
+
+        Map<Id,Account>accMap=New Map<Id,Account>();
+
+        For(Account acc:[SELECT Id,Name,Phone FROM Account wHERE ID IN:accIDs]){
+            accMap.put(acc.Id, acc);
+        }
+        List<Contact>conList=New List<Contact>();
+        For(Contact con:[SELECT Id,Phone,AccountID FROM Contact WHERE AccountID IN:accIds]){
+            if(accMap.containsKey(con.accountId)){
+               con.Phone=accMap.get(con.AccountId).Phone;
+                conList.add(con);
+            }
+        }
+
+        if(!conList.isEmpty()){
+            system.debug(conList);
+            insert conList;
+        }
+    }
 }
