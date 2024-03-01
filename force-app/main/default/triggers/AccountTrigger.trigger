@@ -7,6 +7,7 @@ AccountTriggerHandler.updateRating(Trigger.new);
 else if(Trigger.isAfter){
 AccountTriggerHandler.createRelatedCons(Trigger.new);
 AccountTriggerHandler.relatedOpps(Trigger.New);
+AccountTriggerHandler.createTask(Trigger.new);
 }
 }
 if(Trigger.IsUpdate){
