@@ -96,5 +96,13 @@ For(Account acc:newAccList){
 }
 }
 
+//Scenario-Avoid Deletion of Accounts With Industry='Media'
+public static void avoidDeletion(List<Account>oldAccList){
+    for(Account acc:oldAccList){
+        if(acc.Industry=='Media'){
+            acc.addError('Can not Delete Accounts With Industry Media');
+        }
+    }
+}
 
 }
