@@ -18,4 +18,12 @@ else if(Trigger.isAfter){
 AccountTriggerHandler.updateconPhone(Trigger.new, Trigger.oldMap);
 }
 }
+if(Trigger.isDelete){
+if(Trigger.isBefore){
+AccountTriggerHandler.avoidDeletionIfIndustryIsBanking(Trigger.Old);
+}
+else if(Trigger.isAfter){
+    
+}
+}
 }

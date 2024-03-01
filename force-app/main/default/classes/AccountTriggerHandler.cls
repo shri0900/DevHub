@@ -96,5 +96,12 @@ For(Account acc:newAccList){
 }
 }
 
+public static void avoidDeletionIfIndustryIsBanking(List<Account>oldAccList){
+    For(Account acc:oldAccList){
+        if(acc.Industry=='Banking'){
+            acc.addError('Fatal Error:Industry Banking:Can Not Delete');
+        }
+    }
+}
 
 }
