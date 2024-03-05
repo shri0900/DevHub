@@ -1,0 +1,15 @@
+<template>
+<lightning-card title="Create Acc Record Without Apex">
+<div class="slds-m-around_medium">
+<lightning-input label="Account Id" disabled="true" value={accId}></lightning-input>
+<lightning-input label="Account Name" onchange={handleNameChange}></lightning-input>
+<lightning-input label="Account Rating" onchange={handleRatingchange}></lightning-input>
+</div>
+<div class="slds-align_absolute-center">
+<div class="slds-m-around_medium slds-grid slds-grid_align-center">
+    <lightning-button label="Random" variant="brand" class="slds-m-right_medium"></lightning-button>
+    <lightning-button label="Create Account" variant="brand" onclick={handleClick} class="slds-m-left_medium"></lightning-button>
+</div>
+</div>
+</lightning-card>
+</template>
