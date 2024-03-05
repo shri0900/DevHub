@@ -1,0 +1,12 @@
+<template>
+<lightning-card title="Update Rec With Apex">
+    <div class="slds-p-around_medium">
+        <lightning-input label="Account Id" onchange={handleIdChange}></lightning-input>
+        <lightning-input label="Account Name" onchange={handleNameChange}></lightning-input>
+        <lightning-input label="Account Rating" onchange={handleRatChange}></lightning-input>
+    </div>
+    <div class="slds-align_absolute-center">
+        <lightning-button variant="brand" label="Update" onclick={handleUpdate}></lightning-button>
+    </div>
+</lightning-card>
+</template>

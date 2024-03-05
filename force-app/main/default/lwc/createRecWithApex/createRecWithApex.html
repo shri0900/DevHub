@@ -1,0 +1,12 @@
+<template>
+<lightning-card title="Create Rec With Apex">
+    <div class="slds-p-around_medium">
+        <lightning-input label="Account Name" onchange={handleAccName}></lightning-input>
+        <lightning-input label="Account Rating" onchange={handleRatingChange}></lightning-input>
+        <lightning-input label="Account Id" value={accId} disabled="true"></lightning-input>
+    </div>
+    <div class="slds-align_absolute-center">
+        <lightning-button label="Create Acc" variant="brand" onclick={handleClick}></lightning-button>
+    </div>
+</lightning-card>
+</template>
