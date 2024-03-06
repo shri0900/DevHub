@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title="Parent Component">
+        <lightning-input class="slds-p-bottom_medium" label="Enter Number" placeholder="Enter value" onchange={handleChange} value={value}></lightning-input>
+        <lightning-button label="Add+1" variant="brand" onclick={handleAdd} class="slds-m-around_medium"></lightning-button>
+        <lightning-button label="Substract-1" variant="brand" onclick={handleSub} class="slds-m-around_medium"></lightning-button>
+    </lightning-card>
+    <c-child-comp startvalue={value}></c-child-comp>
+</template>

@@ -7,8 +7,32 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
+                <componentName>parentComponent</componentName>
+                <identifier>c_parentComponent</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>navigationComponent</componentName>
+                <identifier>c_navigationComponent</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
                 <componentName>dataTable</componentName>
                 <identifier>c_dataTable</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>createRecWithApex</componentName>
+                <identifier>c_createRecWithApex</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>getAndDeleteRecWithoutApex</componentName>
+                <identifier>c_getAndDeleteRecWithoutApex</identifier>
             </componentInstance>
         </itemInstances>
         <name>region2</name>
@@ -17,14 +41,32 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
+                <componentName>parentComp</componentName>
+                <identifier>c_parentComp</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
                 <componentName>seachBox</componentName>
                 <identifier>c_seachBox</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>updateRecWithApex</componentName>
+                <identifier>c_updateRecWithApex</identifier>
             </componentInstance>
         </itemInstances>
         <name>region3</name>
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>updateRecWithoutapex</componentName>
+                <identifier>c_updateRecWithoutapex</identifier>
+            </componentInstance>
+        </itemInstances>
         <name>region4</name>
         <type>Region</type>
     </flexiPageRegions>
